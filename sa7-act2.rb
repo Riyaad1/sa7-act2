@@ -39,9 +39,9 @@ puts '--'
 # 4
 content = File.read('input.txt')
 content.reverse!
-# File.open('output.txt', 'w') do |file|
-#   file.puts content
-# end
+File.open('output.txt', 'w') do |file|
+  file.puts content
+end
 
 # 5
 class InvalidAgeError < StandardError
